@@ -13,3 +13,20 @@ let base = (e) => {
 }
 
 b.addEventListener('pointermove', base);
+
+const tv = document.querySelector('.tv');
+const overlay = document.getElementById('tv-game-overlay');
+const closeBtn = document.getElementById('close-tv-game');
+const gameFrame = document.getElementById('tv-game-frame');
+
+const marioURL = "https://www.retrogames.cc/embed/41962-sriginal-sunset-wilds-title-card-sprites.html";
+
+tv.addEventListener('click', () => {
+    overlay.style.display = 'flex';
+    gameFrame.src = marioURL;
+});
+
+closeBtn.addEventListener('click', () => {
+    overlay.style.display = 'none';
+    gameFrame.src = "";
+});
