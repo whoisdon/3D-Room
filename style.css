@@ -2300,3 +2300,35 @@ body {
         background-image: radial-gradient(rgba(36, 112, 188, .8), rgba(56, 121, 250, .8));
    }
 }
+#tv-game-overlay {
+    position: fixed;
+    top: 0; left: 0; width: 100vw; height: 100vh;
+    background: rgba(0,0,0,0.85);
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#tv-game-overlay iframe {
+    width: 800px;
+    height: 600px;
+    border: 4px solid #fff;
+    border-radius: 12px;
+    background: #000;
+    box-shadow: 0 0 40px #5189fb;
+}
+#close-tv-game {
+    position: absolute;
+    top: 5vh;
+    right: 5vw;
+    background: #d51e24;
+    color: #fff;
+    border: none;
+    font-size: 2rem;
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    cursor: pointer;
+    z-index: 10000;
+}
